@@ -11,8 +11,12 @@ func TestSayHello(t *testing.T) {
 			result: "Hello, world!",
 		},
 		{
-			items:  []string("Pedro"),
-			result: "Hello, world!",
+			items:  []string{"Pedro"},
+			result: "Hello, Pedro!",
+		},
+		{
+			items:  []string{"Pedro", "Matt"},
+			result: "Hello, Pedro, Matt!",
 		},
 	}
 
